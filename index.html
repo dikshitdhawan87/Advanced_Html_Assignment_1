@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        .ExternalDiv {
+            margin-left: 35%;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ExternalDiv">
+        <form action="/fakeUrl/fakeAction">
+            <h2>Student Registration Form</h2>
+            <label for="name">Name: </label>
+            <input type="text" size="50" pattern="[A-Za-z]*" title="Alphabets only" id="name" name="name"
+                required="true" placeholder="Enter your name">
+            <br>
+            <br>
+            <label for="phoneNumber">Phone No.: </label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}"
+                title="Enter 10 digit mobile number without +91" placeholder="1234567890">
+            <br>
+            <br>
+            <label for="dateOfBirth">Date of Birth: </label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+            <br>
+            <br>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address"></textarea>
+            <br><br>
+            <label>Gender: </label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" value="Male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" value="Female" name="gender">
+            <br><br>
+            <label for="city">City: </label>
+            <select id="city" name="city">
+                <option value="">Select City</option>
+                <option value="delhi">New Delhi</option>
+                <option value="gurugram">Gurugram</option>
+            </select>
+            <br><br>
+            <p>Hobbies: </p>
+            <label for="music">Music</label>
+            <input type="checkbox" id="music" name="music">
+            <br>
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="sports" name="sports">
+            <br>
+            <label for="reading">Sports</label>
+            <input type="checkbox" id="reading" name="reading">
+            <br>
+            <label for="writing">Sports</label>
+            <input type="checkbox" id="writing" name="writing">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <h3>Sudent Records</h3>
+        <table>
+            <tr>
+                <th>
+                    Sr.No.
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Phone No.
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    DOB
+                </th>
+                <th>
+                    Hobbies
+                </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dikshit Dhawan</td>
+                <td>7838360789</td>
+                <td>Male</td>
+                <td>29/11/1987</td>
+                <td rowspan="3">
+                    Music<br>Reading<br>Writing
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>2</td>
+                <td>Pankaj Tripathi</td>
+                <td>1234567890</td>
+                <td>Male</td>
+                <td>19/10/1967</td>
+                <td rowspan="3">
+                    Acting<br>Theater<br>Commercial Cinema
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>3</td>
+                <td>Ali Afzal</td>
+                <td>0987654321</td>
+                <td>Male</td>
+                <td>22/07/1975</td>
+                <td rowspan="3">
+                    Guitar<br>Movies<br>Standup
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+        </table>
+    </div>
+</body>
+</html>
